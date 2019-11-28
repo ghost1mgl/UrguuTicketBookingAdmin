@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.movieController">
+<StackPane maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.movieController">
    <children>
-      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn fx:id="col_idM" prefWidth="75.0" text="idM" />
-          <TableColumn fx:id="col_title" prefWidth="75.0" text="title" />
-          <TableColumn fx:id="col_duration" prefWidth="75.0" text="duration" />
-          <TableColumn fx:id="col_description" prefWidth="75.0" text="description" />
-          <TableColumn fx:id="col_publishdeDate" prefWidth="75.0" text="publishedDate" />
-          <TableColumn fx:id="col_pngRoot" prefWidth="75.0" text="pngRoot" />
-          <TableColumn fx:id="col_videoRoot" prefWidth="75.0" text="videoRoot" />
-          <TableColumn fx:id="col_actors" prefWidth="75.0" text="actors" />
-        </columns>
-      </TableView>
-      <HBox prefHeight="72.0" prefWidth="600.0">
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+         <StackPane.margin>
+         </StackPane.margin>
+      </ImageView>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0">
          <children>
-            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addMovie" prefHeight="70.0" prefWidth="146.0" text="add" />
-            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="164.0" text="edit" />
-            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="166.0" text="delete" />
-            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#back" prefHeight="70.0" prefWidth="171.0" text="back" />
+            <TableView fx:id="table" prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #bdbdbd;">
+               <columns>
+                  <TableColumn fx:id="col_idM" prefWidth="27.0" text="№" />
+                  <TableColumn fx:id="col_title" prefWidth="147.0" text="Нэр" />
+                  <TableColumn fx:id="col_duration" prefWidth="91.0" text="Үргэлжлэх хугацаа" />
+                  <TableColumn fx:id="col_description" prefWidth="108.0" text="Тайлбар" />
+                  <TableColumn fx:id="col_publishdeDate" prefWidth="121.0" text="Хийгдсэн огноо" />
+                  <TableColumn fx:id="col_pngRoot" prefWidth="119.0" text="Зураг" />
+                  <TableColumn fx:id="col_videoRoot" prefWidth="135.0" text="Трейлэр" />
+                  <TableColumn fx:id="col_actors" prefWidth="151.0" text="Жүжигчид" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="72.0" prefWidth="600.0" spacing="80.0">
+               <children>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addMovie" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #bdbdbd;" text="Нэмэх" textAlignment="JUSTIFY">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #bdbdbd;" text="Засах" />
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #bdbdbd;" text="Устгах" />
+                  <Button fx:id="btnBack" mnemonicParsing="false" onAction="#back" prefHeight="70.0" prefWidth="161.0" style="-fx-background-color: #bdbdbd;" text="Буцах" />
+               </children>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </HBox>
          </children>
-      </HBox>
+         <StackPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </StackPane.margin>
+      </VBox>
+      <Label text="Бүх кино" textFill="WHITE">
+         <font>
+            <Font name="FreeMono" size="33.0" />
+         </font>
+         <StackPane.margin>
+            <Insets bottom="50.0" left="-550.0" right="50.0" top="-550.0" />
+         </StackPane.margin>
+      </Label>
    </children>
-</VBox>
+</StackPane>

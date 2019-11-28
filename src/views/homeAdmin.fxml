@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.homeController">
+<StackPane maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.homeController">
    <children>
-      <Button fx:id="btnMovie" mnemonicParsing="false" onAction="#changeToMovieManager" prefHeight="130.0" prefWidth="609.0" text="Manage Movie" />
-      <Button fx:id="btnSchedule" mnemonicParsing="false" onAction="#changeToScheduleManager" prefHeight="143.0" prefWidth="653.0" text="Manage Schedule" />
-      <Button fx:id="btnSeats" mnemonicParsing="false" onAction="#changeToSeats" prefHeight="138.0" prefWidth="622.0" text="See Seats" />
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+         <StackPane.margin>
+         </StackPane.margin>
+      </ImageView>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="460.0">
+         <children>
+            <Label text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font name="FreeMono" size="51.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="150.0" right="50.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnMovie" mnemonicParsing="false" onAction="#changeToMovieManager" prefHeight="130.0" prefWidth="400.0" text="Manage Movie">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FreeMono" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSchedule" mnemonicParsing="false" onAction="#changeToScheduleManager" prefHeight="130.0" prefWidth="400.0" text="Manage Schedule">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FreeMono" size="28.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSeats" mnemonicParsing="false" onAction="#changeToSeats" prefHeight="130.0" prefWidth="400.0" text="See Seats">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FreeMono" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</StackPane>

@@ -1,14 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="views.EditMovie"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<StackPane maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.editMovieController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+         <StackPane.margin>
+         </StackPane.margin>
+      </ImageView>
+      <StackPane prefHeight="486.0" prefWidth="724.0" style="-fx-border-color: white; -fx-border-radius: 10;">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="404.0" prefWidth="722.0">
+               <children>
+                  <HBox prefHeight="23.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="173.0" text="№" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_idM" prefHeight="26.0" prefWidth="219.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="172.0" text="Нэр" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_title" prefHeight="26.0" prefWidth="165.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="172.0" text="Үргэлжлэх хугацаа" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_duration" prefHeight="26.0" prefWidth="160.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="26.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="171.0" text="Тайлбар" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_description" prefHeight="26.0" prefWidth="211.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="169.0" text="Хийгдсэн огноо" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <DatePicker fx:id="txt_publishdeDate" prefHeight="26.0" prefWidth="207.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="22.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="170.0" text="Зураг" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_pngRoot" prefHeight="26.0" prefWidth="208.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="169.0" text="Трейлэр" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_videoRoot" prefHeight="26.0" prefWidth="214.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="231.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="168.0" text="Жүжигчид" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="15.0" left="20.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="txt_actors" prefHeight="26.0" prefWidth="214.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </StackPane.margin>
+            </VBox>
+            <Label style="-fx-background-color: black;" text="Киноны мэдээллийг засах" textFill="WHITE" translateX="-180.0" translateY="-207.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="200.0" left="150.0" right="150.0" top="100.0" />
+         </StackPane.margin>
+      </StackPane>
+      <HBox prefHeight="33.0" prefWidth="231.0" spacing="100.0">
+         <children>
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancel" prefHeight="43.0" prefWidth="112.0" text="Буцах" />
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addMovie" prefHeight="41.0" prefWidth="121.0" text="Нэмэх" />
+         </children>
+         <StackPane.margin>
+            <Insets left="350.0" top="580.0" />
+         </StackPane.margin>
+      </HBox>
+   </children>
+</StackPane>
