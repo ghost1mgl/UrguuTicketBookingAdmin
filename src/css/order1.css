@@ -1,0 +1,21 @@
+#listShow1, #listShow2, #listShow3 {
+    -fx-background-color: transparent;
+    -fx-spacing: 50px;
+}
+.list-cell {
+    -fx-padding: 10px;
+    -fx-margin: 200px;
+    -fx-background-color: #999999;
+    -fx-text-size: 20px;
+    -fx-background-radius: 10px;
+}
+.list-cell:hover {
+    -fx-background-color: #003d66;
+    -fx-text-fill: white;
+}
+.list-cell:active {
+    -fx-text-fill: #003d66;
+}
+.list-cell:empty {
+    -fx-background-color: transparent ;
+}

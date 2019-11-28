@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="768.0" maxWidth="1024.0" minHeight="768.0" minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Order3Controller">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" translateY="50.0">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+         <StackPane.margin>
+         </StackPane.margin>
+      </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="298.0" prefWidth="1024.0">
+               <children>
+                  <ImageView fx:id="imgMoviePoster11" fitHeight="270.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/charliesangels_poster.jpg" />
+                     </image>
+                  </ImageView>
+                  <GridPane prefHeight="122.0" prefWidth="168.0">
+                     <children>
+                        <Label fx:id="lblMovieName11" text="Label" textFill="WHITE" GridPane.columnSpan="2">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="8.0" text="Төрөл" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="8.0" text="Найруулагч" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="28.0" text="Дүрүүдэд" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMovieDuration11" layoutX="10.0" layoutY="8.0" text="Үргэлжлэх хугацаа" textFill="WHITE" wrapText="true" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMovieGenre11" layoutX="10.0" layoutY="28.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMovieDirector11" layoutX="10.0" layoutY="38.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMovieCharacters11" layoutX="10.0" layoutY="18.0" text="Label" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="38.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="93.0" layoutY="95.0" text="Товч үйл явдал" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblDescription11" layoutX="10.0" layoutY="120.0" text="Label" textFill="WHITE" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="98.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="65.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </GridPane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <StackPane prefHeight="356.0" prefWidth="824.0" style="-fx-border-color: white; -fx-border-radius: 10;">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: blue;" />
+                              <Label text="Таны суудал" textFill="WHITE" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" />
+                              <Label layoutX="72.0" layoutY="10.0" text="Боломжтой" textFill="WHITE" />
+                              <Button layoutX="144.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: grey;" />
+                              <Label layoutX="108.0" layoutY="10.0" text="Зарагдсан" textFill="WHITE" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="250.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <GridPane fx:id="gridPanaAllSeats" hgap="5.0" prefHeight="450.0" prefWidth="650.0" vgap="10.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" percentWidth="-0.0" prefWidth="30.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" percentWidth="-0.0" prefWidth="50.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="20.0" minHeight="20.0" percentHeight="-0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <VBox.margin>
+                              <Insets bottom="-10.0" left="50.0" top="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <Label style="-fx-background-color: black;" text="Суудлаа сонгох" textFill="WHITE" translateX="150.0" translateY="-370.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnBack" mnemonicParsing="false" onAction="#back" text="Буцах">
+                     <HBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnContinue" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#changeScreen" text="Үргэлжлүүлэх">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="250.0" top="-15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

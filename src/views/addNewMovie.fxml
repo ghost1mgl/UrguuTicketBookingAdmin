@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,7 +9,7 @@
 
 <AnchorPane prefHeight="314.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addNewMovieController">
    <children>
-      <VBox alignment="TOP_CENTER" layoutX="19.0" layoutY="6.0" prefHeight="302.0" prefWidth="224.0">
+      <VBox alignment="TOP_CENTER" layoutX="19.0" layoutY="6.0" prefHeight="331.0" prefWidth="224.0">
          <children>
             <Label alignment="CENTER" text="Add a new movie " />
             <HBox prefHeight="23.0" prefWidth="231.0">
@@ -40,7 +39,7 @@
             <HBox prefHeight="25.0" prefWidth="231.0">
                <children>
                   <Label prefHeight="18.0" prefWidth="122.0" text="published" />
-                  <DatePicker fx:id="txt_publishdeDate" prefHeight="26.0" prefWidth="207.0" />
+                  <TextField fx:id="txt_publishdeDate" prefHeight="26.0" prefWidth="206.0" />
                </children>
             </HBox>
             <HBox prefHeight="22.0" prefWidth="231.0">
@@ -59,6 +58,18 @@
                <children>
                   <Label prefHeight="18.0" prefWidth="131.0" text="actors" />
                   <TextField fx:id="txt_actors" prefHeight="26.0" prefWidth="214.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="224.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="113.0" text="movieType" />
+                  <TextField fx:id="txt_movieType" prefHeight="26.0" prefWidth="196.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="24.0" prefWidth="224.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="131.0" text="movieGPA" />
+                  <TextField fx:id="txt_movieGPA" prefHeight="26.0" prefWidth="211.0" />
                </children>
             </HBox>
             <HBox prefHeight="33.0" prefWidth="231.0">

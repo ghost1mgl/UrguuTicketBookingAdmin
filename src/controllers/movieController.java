@@ -101,4 +101,17 @@ public class movieController implements Initializable {
         window.setScene(tableViewScene);
         window.show();
     }
+
+    public void editSelected(ActionEvent actionEvent) throws IOException {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("../views/editMovie.fxml"));
+        Scene tableViewScene = new Scene(tableViewParent);
+
+        Stage window = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
+
+        window.setScene(tableViewScene);
+        window.show();
+    }
+
+    public void deleteSelected(ActionEvent actionEvent) {
+    }
 }

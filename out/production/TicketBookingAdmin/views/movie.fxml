@@ -23,8 +23,8 @@
       <HBox prefHeight="72.0" prefWidth="600.0">
          <children>
             <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addMovie" prefHeight="70.0" prefWidth="146.0" text="add" />
-            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="164.0" text="edit" />
-            <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="166.0" text="delete" />
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#editSelected" prefHeight="70.0" prefWidth="164.0" text="edit" />
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteSelected" prefHeight="70.0" prefWidth="166.0" text="delete" />
             <Button fx:id="btnBack" mnemonicParsing="false" onAction="#back" prefHeight="70.0" prefWidth="171.0" text="back" />
          </children>
       </HBox>
