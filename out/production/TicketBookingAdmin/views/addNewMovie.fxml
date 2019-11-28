@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="314.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.addNewMovieController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="19.0" layoutY="6.0" prefHeight="302.0" prefWidth="224.0">
+         <children>
+            <Label alignment="CENTER" text="Add a new movie " />
+            <HBox prefHeight="23.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="130.0" text="idM" />
+                  <TextField fx:id="txt_idM" prefHeight="26.0" prefWidth="219.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="78.0" text="Title" />
+                  <TextField fx:id="txt_title" prefHeight="26.0" prefWidth="165.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="72.0" text="duration" />
+                  <TextField fx:id="txt_duration" prefHeight="26.0" prefWidth="160.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="125.0" text="description" />
+                  <TextField fx:id="txt_description" prefHeight="26.0" prefWidth="211.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="122.0" text="published" />
+                  <DatePicker fx:id="txt_publishdeDate" prefHeight="26.0" prefWidth="207.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="122.0" text="pngRoot" />
+                  <TextField fx:id="txt_pngRoot" prefHeight="26.0" prefWidth="208.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="129.0" text="videoRoot" />
+                  <TextField fx:id="txt_videoRoot" prefHeight="26.0" prefWidth="214.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="231.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="131.0" text="actors" />
+                  <TextField fx:id="txt_actors" prefHeight="26.0" prefWidth="214.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="231.0">
+               <children>
+                  <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancel" prefHeight="43.0" prefWidth="112.0" text="cancel" />
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addMovie" prefHeight="41.0" prefWidth="121.0" text="add" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.homeController">
+   <children>
+      <Button fx:id="btnMovie" mnemonicParsing="false" onAction="#changeToMovieManager" prefHeight="130.0" prefWidth="609.0" text="Manage Movie" />
+      <Button fx:id="btnSchedule" mnemonicParsing="false" onAction="#changeToScheduleManager" prefHeight="143.0" prefWidth="653.0" text="Manage Schedule" />
+      <Button fx:id="btnSeats" mnemonicParsing="false" onAction="#changeToSeats" prefHeight="138.0" prefWidth="622.0" text="See Seats" />
+   </children>
+</VBox>
